@@ -124,7 +124,6 @@ label {
 #email-field {
   cursor: pointer;
   border-radius: 8px;
-  width: 100%;
   padding: 15px;
   margin-top: 5px;
   border: var(--grey) solid;
@@ -151,7 +150,6 @@ label {
   color: var(--white);
   padding: 15px;
   margin: 5px 0px;
-  width: 100%;
   font-weight: bold;
   margin-top: 20px;
 }

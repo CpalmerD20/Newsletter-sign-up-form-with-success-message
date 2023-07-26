@@ -1,11 +1,12 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor]
+
 (https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). 
+
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 - [The challenge](#the-challenge)
-- [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 
@@ -30,7 +31,7 @@ How to notify a screen reader of a content update.
 
 ```html
 <span class="email-error" aria-live="polite" aria-atomic="true">
-  
+
 </span>
 ```
 ```javascript

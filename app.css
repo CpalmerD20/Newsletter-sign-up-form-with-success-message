@@ -199,7 +199,7 @@ label {
   }
 
   form {
-    min-width: 40%;
+    min-width: 35%;
     margin: 10px;
     margin-left: 35px;
   }
@@ -214,11 +214,11 @@ label {
   }
 
   #email-field {
-    width: 90%;
+    width: 80%;
   }
 
   #subscribe {
-    width: 90%
+    width: 80%
   }
 }
 

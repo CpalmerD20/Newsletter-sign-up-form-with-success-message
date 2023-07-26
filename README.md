@@ -19,9 +19,6 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-## My process
-
-
 ## Built with
 - Semantic HTML5 markup
 - Flexbox
@@ -32,7 +29,9 @@ Users should be able to:
 How to notify a screen reader of a content update.
 
 ```html
-<span class="email-error" aria-live="polite" aria-atomic="true"></span>
+<span class="email-error" aria-live="polite" aria-atomic="true">
+  
+</span>
 ```
 ```javascript
 if (!emailField.validity.valid) {

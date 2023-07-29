@@ -201,6 +201,10 @@ label {
     font-size: 1rem;
   }
 
+  .email-error {
+    left: -30px;
+  }
+
   #desktop-img {
     float: right;
     margin-right: 5px;

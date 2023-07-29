@@ -4,23 +4,17 @@ const emailError = document.querySelector('.email-error');
 const subscribeButton = document.querySelector("#subscribe");
 const container = document.querySelector(".container");
 
-/*
-  TODO
-  [CSS] align icons and list items
-  ...finish, matching design layout
-  How can you have email error alert the screen reader?
-*/
-
 subscribeButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  if (!emailField.validity.valid) {
-    const updated = new CustomEvent('content-updated');
-    emailError.textContent = "Valid email required";
-    emailError.dispatchEvent(updated);
+  if (emailField.value < 4) {
     return;
   }
-  if (emailField.value < 4) {
+
+  const updated = new CustomEvent('content-updated');
+  if (!emailField.validity.valid) {
+    emailError.textContent = "Valid email required";
+    emailError.dispatchEvent(updated);
     return;
   }
 
@@ -28,7 +22,6 @@ subscribeButton.addEventListener("click", (event) => {
 
   const email = emailField.value;
   container.innerHTML = "";
-  // console.log("Begin new HTML body", email);
 
   container.classList.toggle("container");
   container.classList.toggle("success-container");
@@ -61,4 +54,6 @@ subscribeButton.addEventListener("click", (event) => {
     event.preventDefault();
     document.body.innerHTML = "";
   })
+  container.dispatchEvent(updated);
+  container.focus();
 })

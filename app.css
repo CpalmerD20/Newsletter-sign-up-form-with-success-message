@@ -75,10 +75,6 @@ body {
   margin-top: 10px;
 }
 
-li {
-  list-style-type: none;
-}
-
 p {
   padding-top: 10px;
 }
@@ -93,7 +89,16 @@ figure img {
   font-size: 3.1rem;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: 21px 1fr;
+  gap: 5px;
+  margin-bottom: 20px;
+
+}
+
 li {
+  list-style-type: none;
   font-size: 0.8rem;
   display: inline;
   margin: 2px;
@@ -101,18 +106,6 @@ li {
 }
 
 .join {
-  margin-bottom: 20px;
-}
-
-.icon {
-  position: relative;
-  top: 5px;
-  margin: 2px;
-  margin-right: 4px;
-  display: inline;
-}
-
-ul {
   margin-bottom: 20px;
 }
 
@@ -250,14 +243,17 @@ label {
     margin: 10px;
   }
 
+  .icon {
+    position: relative;
+    top: 5px;
+    margin: 2px;
+    margin-right: 4px;
+    display: inline;
+  }
+
   li {
     font-size: 1rem;
     margin: 5px;
-  }
-
-  ul {
-    margin-bottom: 20px;
-
   }
 
   #email-field {
